@@ -1,0 +1,12 @@
+<table>
+  <tbody>
+    @for (cliente of listClientes; track $index) {
+    <tr>
+      <td>{{ cliente.getNombre() }}</td>
+      <td>{{ cliente.getCif() }}</td>
+      <td>{{ cliente.getDireccion() }}</td>
+      <td>{{ cliente.getGrupo() }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
