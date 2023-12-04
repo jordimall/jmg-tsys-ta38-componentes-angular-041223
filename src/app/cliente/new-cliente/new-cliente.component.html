@@ -1,0 +1,9 @@
+Nombre: <input type="text" [(ngModel)]="nombre" /> CIF:
+<input type="text" [(ngModel)]="cif" /> Dirección:
+<input type="text" [(ngModel)]="direccion" /> Grupo:
+<select name="grupo" id="grupo" [(ngModel)]="grupo">
+  <option value="" selected>Sin definir</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+</select>
+<button (click)="guardar()">Guardar</button>
